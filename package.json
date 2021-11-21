@@ -1,0 +1,21 @@
+{
+    "name": "mongo_es",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "build": "rm -rf ./build && tsc -outDir build",
+        "tscinit": "tsc --init",
+        "start": "node --max-old-space-size=8192 build/main.js",
+        "dev": "nodemon --watch './**/*.ts' --exec 'ts-node' src/main.ts"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "typescript": "^4.5.2"
+    },
+    "dependencies": {
+        "@types/node": "^16.11.9"
+    }
+}
